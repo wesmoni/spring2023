@@ -18,10 +18,9 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <properties>
-                <activatedProperties>dev</activatedProperties>
+                <spring.profiles.active>dev</spring.profiles.active>
             </properties>
         </profile>
-
         <profile>
             <id>test</id>
             <activation>
