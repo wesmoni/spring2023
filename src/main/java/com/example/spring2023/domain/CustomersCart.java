@@ -1,4 +1,4 @@
-package com.example.spring2023.app;
+package com.example.spring2023.domain;
 
 /**
  * Класс отвечает за управление корзиной покупателя
