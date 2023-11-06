@@ -4,7 +4,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Getter;
-import lombok.Setter;
 
 import java.util.Objects;
 
@@ -17,26 +16,20 @@ class Users {
 
     @Id
     @Getter
-    @Setter
     private Long id;
 
     @Getter
-    @Setter
     private String email;
 
     @Getter
-    @Setter
     private String firstName;
 
     @Getter
-    @Setter
     private String lastName;
 
     @Getter
-    @Setter
     private String login;
 
-    @Setter
     @Getter
     private String password;
 
