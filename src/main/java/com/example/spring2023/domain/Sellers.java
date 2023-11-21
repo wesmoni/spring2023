@@ -11,4 +11,6 @@ public class Sellers extends Users{
     public Sellers(Long id, String email, String firstName, String lastName, String login, String password) {
         super(id, email, firstName, lastName, login, password);
     }
+
+
 }

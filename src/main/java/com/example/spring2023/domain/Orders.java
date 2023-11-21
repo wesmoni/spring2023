@@ -11,7 +11,7 @@ import lombok.Getter;
  * */
 @Data
 @Entity
-@Table(name="ORDERS")
+@Table(name="Orders")
 public class Orders {
     @Id
     @Getter
@@ -34,5 +34,9 @@ public class Orders {
         this.customer = customer;
         this.product = product;
         this.address = address;
+    }
+
+    public Orders() {
+
     }
 }

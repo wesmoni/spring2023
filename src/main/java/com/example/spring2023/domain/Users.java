@@ -11,7 +11,7 @@ import java.util.Objects;
  * Класс Users является суперклассом, наследуемым классами Customers и Sellers
  * */
 @Entity
-@Table(name = "USERS_TABLE")
+@Table(name = "Users")
 class Users {
 
     @Id
@@ -43,6 +43,10 @@ class Users {
         this.lastName = lastName;
         this.login = login;
         this.password = password;
+    }
+
+    public Users() {
+
     }
 
     /**
