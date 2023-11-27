@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import static com.tngtech.archunit.library.Architectures.layeredArchitecture;
 
-class Spring2023ApplicationTests {
+class                                                                                                                                                                                                                           Spring2023ApplicationTests {
 
     private static final String PACKAGE_NAME = "com.example.spring2023";
     private static final JavaClasses CLASSES = new ClassFileImporter().importPackages(PACKAGE_NAME);
