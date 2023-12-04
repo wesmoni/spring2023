@@ -3,11 +3,18 @@ server:
 
 spring:
   datasource:
-    url: jdbc:h2:mem:testdb
-    driverClassName: org.h2.Driver
+    url: jdbc:postgresql://localhost:5432/online_3d
+    driverClassName: org.postgresql.Driver
     username: admin
     password: admin
   jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+      database: postgresql
+        database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+
   profiles:
     active: test
+
+

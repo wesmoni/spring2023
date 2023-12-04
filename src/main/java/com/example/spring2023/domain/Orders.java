@@ -7,7 +7,7 @@ import lombok.Data;
 import lombok.Getter;
 
 /**
- * Класс отвечает за все, что связано с заказами
+ * Класс отвечает (почти) за все, что связано с заказами
  * */
 @Data
 @Entity
@@ -26,6 +26,12 @@ public class Orders {
     @Getter
     private String address;
 
+    @Getter
+    private String status;
+
+    @Getter
+    private Long amount;
+
     /**
      * Конструктор класса
      * */
@@ -36,7 +42,19 @@ public class Orders {
         this.address = address;
     }
 
-    public Orders() {
+    /**
+     * Конструктор класса
+     * */
+    public Orders(String s, String product_b, double v) {
 
     }
+
+    /**
+     * Метод отвечает за статус заказа
+     * */
+    private void setStatus(String status) {
+        this.status = status;
+    }
+
+
 }

@@ -3,6 +3,7 @@ package com.example.spring2023.domain;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.Data;
 import lombok.Getter;
 
 import java.util.Objects;
@@ -10,6 +11,7 @@ import java.util.Objects;
 /**
  * Класс Users является суперклассом, наследуемым классами Customers и Sellers
  * */
+@Data
 @Entity
 @Table(name = "Users")
 class Users {
