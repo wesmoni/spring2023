@@ -68,5 +68,4 @@ class Users {
     public int hashCode() {
         return Objects.hash(getId());
     }
-
 }

@@ -9,6 +9,9 @@ public class FixedDiscount implements Discount {
 
     @Override
     public double apply(double originalPrice) {
-        return originalPrice - amount;
+        if (originalPrice < 0) {
+            throw new IllegalArgumentException("Original price cannot be negative");
+        }
+        return Math.max(0, originalPrice - amount);
     }
 }
