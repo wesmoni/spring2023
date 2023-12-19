@@ -6,7 +6,7 @@ import javax.mail.internet.MimeMessage;
 import java.util.Properties;
 
 /**
- * Класс отвечает за связь автоматизацию работы с почтой
+ * Класс отвечает за автоматизацию работы с почтой
  * */
 public class EmailService {
 

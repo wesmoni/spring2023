@@ -5,6 +5,9 @@ import static org.mockito.Mockito.*;
 import com.example.spring2023.app.ProductService;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Тест для ProductService
+ * */
 class CartServiceTest {
 
     @Test
