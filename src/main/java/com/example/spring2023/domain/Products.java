@@ -23,6 +23,9 @@ public class Products {
     private double price;
 
     @Getter
+    private String category;
+
+    @Getter
     private double rate;
 
     String productDescription;

@@ -1,5 +1,7 @@
 package com.example.spring2023.domain;
 
+import com.example.spring2023.app.ProductService;
+
 import java.util.List;
 
 /**
@@ -15,9 +17,15 @@ public class CustomersCart {
     private List<Products> cartItems;
 
     /**
+     * Конструктор класса
+     * */
+    public CustomersCart(ProductService mockedProductService, CustomersCart mockedCartRepository) {
+    }
+
+    /**
      * Метод реализует логику добавления элемента класса Product в корзину
      * */
-    public void addItemToCart(Products item) throws IllegalArgumentException {
+    public void addItemToCart(long item, int i) throws IllegalArgumentException {
         if (item == null) {
             throw new IllegalArgumentException("Item cannot be null");
         }
