@@ -3,6 +3,8 @@ package com.example.spring2023.domain;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;
 import lombok.Getter;
 
@@ -17,6 +19,7 @@ public class Orders {
     @Getter
     private Long id;
 
+    @NotEmpty(message = "Имя покупателя не должно быть пустым")
     @Getter
     private Customers customer;
 
@@ -24,7 +27,12 @@ public class Orders {
     private Products product;
 
     @Getter
+    @NotEmpty(message = "Адрес доставки не должен быть пустым")
     private String address;
+
+    @Getter
+    @Email(message = "Некорректный адрес электронной почты")
+    private String customerEmail;
 
     @Getter
     private String status;
